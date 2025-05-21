@@ -10,6 +10,7 @@ html, body{
     grid-template-columns: 1fr 1fr 5fr 1fr 1fr;
     padding: 1rem;
     text-transform: uppercase;
+    align-items: baseline;
 }
 .intro{
     width: 50%;
@@ -42,9 +43,14 @@ html, body{
 .join{
     
     display:grid;
-    grid-template-columns: 2fr 1fr 2fr 1fr;
+    grid-template-columns: 1fr;
     background-color: rgb(62, 115, 207);
     height:80px;
     margin-right: 0;
     margin-left: 0;
+    align-items: center;
+    justify-items: center;
+    color:white;
+    text-transform: uppercase;
 }
+

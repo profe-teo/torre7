@@ -9,19 +9,29 @@
         .contenedor{
             display: grid;
             gap:10px;
-            grid-template-columns:minmax(200px,1fr ) repeat(auto-fit, minmax(50px,100px ));
+            grid-template-columns:repeat(3,100px);
+            grid-template-rows: repeat(3,100px);
             
             width:80%;
             min-width: 20%;
             margin:0 auto;
             background-color: antiquewhite;
             padding:20px;
+            height:800px;
+            
+            /* justify-items:  center; 
+
+            justify-content: start;
+            align-content: start;*/
+
+            place-content: start center;
 
         }
         .contenedor div{
             background-color: brown;
             border: 2px solid blue;
-            min-height: 100px;
+            /* height: 100px; */
+            
             color:white;
         }
         .uno{
@@ -43,15 +53,19 @@
 </head>
 <body>
     <div class="contenedor">
-        <div class="uno"><a href="#">UNO</a></div>
+        <div ><a href="#">UNO</a></div>
         <div>DOS</div>
         <div>TRES</div>
         <div>CUATRO</div>
         <div>CINCO</div>
-        <div id="seis">SEIS</div>
+        <div >SEIS</div>
         <div>SIETE</div>
         <div>OCHO</div>
-        
+         <div>DOS</div>
+        <div>TRES</div>
+        <div>CUATRO</div>
+        <div>CINCO</div>
+     
     </div>
     
 </body>
