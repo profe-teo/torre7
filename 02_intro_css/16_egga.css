@@ -1,0 +1,59 @@
+body{
+    margin:0;
+    padding:0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 16px;
+}
+header{
+    background-color: rgb(28, 219, 249);
+}
+h4{
+    margin-top: 0;
+    font-size: 1.2rem;
+    padding: 0.5rem;
+    color: white;
+    font-weight: normal;
+
+}
+h1{
+    margin-top: 0;
+    font-size: 3.5rem;
+    font-weight: normal;
+}
+h3{
+    font-size: 1.6rem;
+    font-weight: normal;
+}
+main{
+    width:60%;
+    margin:0 auto;
+    
+}
+div{
+    background-color:rgb(28, 219, 249); ;
+}
+.imagen{
+    border-radius: 75px;
+    padding-right:0.9rem;
+    float:left;
+}
+.bloque-ppal{
+    padding:1rem;
+    overflow:hidden;
+    
+}
+.sombra{
+    box-shadow: 6px 11px 5px 0px rgba(0,0,0,0.07);
+}
+.mail{
+padding:0.5rem;
+height:4rem;
+margin-bottom: 0.9rem;
+}
+.mail p{
+    margin-top:0;
+    
+}
+.icon-background {
+    color: #676867;
+}

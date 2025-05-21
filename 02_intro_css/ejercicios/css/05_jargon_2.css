@@ -1,0 +1,94 @@
+.contenedor{
+    background-color: rgb(193, 216, 237);
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 80px;
+    border-radius: 30px;
+}
+
+.titulo{
+    text-align: center;
+    text-decoration: underline;
+    text-transform:uppercase;
+    font-size: 55px;
+    font-weight: 700;
+    padding-top: 40px;
+}
+h2{
+    font-size: 30px;
+    font-weight: 800;
+    background-color: rgb(69,172,209);
+    margin-left: 10px;
+    margin-right: 10px;
+    padding-left: 10px;
+
+}
+h3{
+    color:white;
+    background-color: rgb(84, 173, 214);
+    font-size: 22px;
+    font-weight: 700;
+    margin-left: 10px;
+    margin-right: 10px;
+    padding-left: 10px;
+}
+pre{
+    background-color: white;
+    margin-left: 10px;
+    margin-right: 10px;
+    font-weight: bolder;
+    font-size: 16px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+
+}
+.textos{
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.poema{
+    font-style: italic;
+    margin-left: 40px;
+    line-height: 180%;
+}
+.pie{
+    text-align: right;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin-right: 10px;
+    padding-top:40px;
+    padding-bottom: 100px;
+}
+
+/* Esto se aplica al elemento con is afaik
+#afaik{
+    background-color: red;
+}*/
+
+/* Selector descendente (cualquier nivel) 
+div p{
+    background-color: red;
+}*/
+
+/*Selector de hijos (justo debajo) 
+article>p{
+    background-color: yellow;
+}*/
+
+h3,pre{
+    font-family: 'Courier New', Courier, monospace;
+    color:aquamarine;
+    font-size: 55px;
+}
+
+a{
+    color:red;
+    font-size: 50px;
+}
+a:hover{
+    background-color: black;
+    color:white;
+    cursor:cell;
+}
+a:visited{
+    color:orange;
+    text-decoration: underline;
+}
