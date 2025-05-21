@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta na me="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Experimento</title>
+    <style>
+        
+        .contenedor{
+            display: grid;
+            gap:10px;
+            grid-template-columns:minmax(200px,1fr ) repeat(auto-fit, minmax(50px,100px ));
+            
+            width:80%;
+            min-width: 20%;
+            margin:0 auto;
+            background-color: antiquewhite;
+            padding:20px;
+
+        }
+        .contenedor div{
+            background-color: brown;
+            border: 2px solid blue;
+            min-height: 100px;
+            color:white;
+        }
+        .uno{
+            grid-row: 1 / -5;
+            grid-column: 1 / 2;
+        }
+
+        #seis{
+            background-color: aquamarine;
+            grid-row: 1 / -5;
+            grid-column: 1 / 2;
+            
+        }
+        #seis:hover{
+            z-index: -1000;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="contenedor">
+        <div class="uno"><a href="#">UNO</a></div>
+        <div>DOS</div>
+        <div>TRES</div>
+        <div>CUATRO</div>
+        <div>CINCO</div>
+        <div id="seis">SEIS</div>
+        <div>SIETE</div>
+        <div>OCHO</div>
+        
+    </div>
+    
+</body>
+</html>
