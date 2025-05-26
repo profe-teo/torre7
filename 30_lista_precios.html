@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de precios</title>
+    <style>
+        body{
+            background-color: rgb(79, 84, 237);
+        }
+        .contenedor{
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-size: 16px;
+            
+            display: flex;
+            gap:20px;
+            /* border: 2px solid red; */
+            width: 80%;
+            margin: 0 auto;
+            justify-content: center;
+        }
+        .tarjeta{
+            border: 2px solid blue;
+            padding:3rem 1rem 3rem 1rem;
+            text-align: center;
+            max-width: 14rem;
+            background-color: rgb(238, 240, 240);
+            border-radius: 10px;
+        }
+        .amarillo{
+            color:rgb(240, 207, 38);
+            font-size: 0,5rem;
+            font-weight: 600;
+        }
+        .dinero{
+            font-size: 1.4rem;
+            font-weight: 800;
+            color: rgb(56, 56, 139);
+        }
+        .imagen{
+            border-radius: 50%;
+            width: 60px;
+        }
+    </style>
+</head>
+<body>
+    <main class="fondo">
+        <header>
+            <h3>start now</h3>
+            <h1>Your plan, your choice</h1>
+        </header>
+        <div class="contenedor">
+            <div class="tarjeta">
+                <img class="imagen" src="img/1.png" alt="">
+                <p class="amarillo">Starter</p>
+                <p class="dinero">$49</p>
+                <p>Lorem ipsum dolor sit, amet conse ctetur adipi sicing elit. Corporis, facilis?</p>
+                <p><a href="">Get started</a></p>
+            </div>
+             <div class="tarjeta">
+                <img style="width: 50px;" src="img/1.png" alt="">
+                <p>Starter</p>
+                <p>$49</p>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corporis, facilis?</p>
+                <p><a href="">Get started</a></p>
+            </div>
+                        <div class="tarjeta">
+                <img style="width: 50px;" src="img/1.png" alt="">
+                <p>Starter</p>
+                <p>$49</p>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corporis, facilis?</p>
+                <p><a href="">Get started</a></p>
+            </div>
+        </div>
+    </main>
+</body>
+</html>
