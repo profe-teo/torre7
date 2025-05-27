@@ -7,10 +7,22 @@
     <style>
         body{
             background-color: rgb(79, 84, 237);
-        }
-        .contenedor{
             font-family: Verdana, Geneva, Tahoma, sans-serif;
             font-size: 16px;
+        }
+        h1, h3{
+            color:white;
+            text-align: center;
+        }
+        h1{
+            font-size: 4rem;
+        }
+        h3{
+            font-size:2rem;
+            text-transform: uppercase;
+        }
+        .contenedor{
+
             
             display: flex;
             gap:20px;
@@ -18,14 +30,27 @@
             width: 80%;
             margin: 0 auto;
             justify-content: center;
+            align-items: end;
+            
         }
         .tarjeta{
-            border: 2px solid blue;
+            /* border: 2px solid blue; */
+            box-shadow: 19px 22px 15px -3px rgba(0,0,0,0.1);
             padding:3rem 1rem 3rem 1rem;
             text-align: center;
             max-width: 14rem;
+            /* max-height: 15rem; */
             background-color: rgb(238, 240, 240);
             border-radius: 10px;
+            padding-top:0.4rem;
+            
+        }
+        .alta{
+            display:flex;
+            flex-direction: column;
+            min-height: 18rem;
+            align-items: center;
+            justify-content: flex-start;
         }
         .amarillo{
             color:rgb(240, 207, 38);
@@ -33,7 +58,7 @@
             font-weight: 600;
         }
         .dinero{
-            font-size: 1.4rem;
+            font-size: 1.6rem;
             font-weight: 800;
             color: rgb(56, 56, 139);
         }
@@ -41,34 +66,53 @@
             border-radius: 50%;
             width: 60px;
         }
+        .popular{
+            line-height: 1.5rem;
+            margin-bottom: 40px;
+            padding:0;
+            font-weight: 600;
+            color:rgb(79, 84, 237);
+            text-transform: uppercase;
+            background-color: rgb(244, 184, 66);
+            line-height: 1.4lh;
+            width:100%;
+            
+        }
+        .texto{
+            font-size: 0.8rem;
+            color: rgb(139, 139, 141);
+        }
     </style>
 </head>
 <body>
     <main class="fondo">
         <header>
             <h3>start now</h3>
-            <h1>Your plan, your choice</h1>
+            <h1>Your plan, your choice.</h1>
         </header>
         <div class="contenedor">
-            <div class="tarjeta">
+            <div  class="tarjeta">
                 <img class="imagen" src="img/1.png" alt="">
                 <p class="amarillo">Starter</p>
                 <p class="dinero">$49</p>
-                <p>Lorem ipsum dolor sit, amet conse ctetur adipi sicing elit. Corporis, facilis?</p>
+                <p class="texto">Lorem ipsum dolor sit, amet conse ctetur adipi sicing elit. Corporis, facilis?</p>
                 <p><a href="">Get started</a></p>
             </div>
-             <div class="tarjeta">
-                <img style="width: 50px;" src="img/1.png" alt="">
-                <p>Starter</p>
-                <p>$49</p>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corporis, facilis?</p>
+             <div style="padding-top:0" class="tarjeta alta">
+                <div class="popular">most popular</div>
+                <div>
+                <img class="imagen"  src="img/1.png" alt="">
+                <p class="amarillo">Personal</p>
+                <p class="dinero">$99</p>
+                <p class="texto">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corporis, facilis?</p>
                 <p><a href="">Get started</a></p>
+                </div>
             </div>
-                        <div class="tarjeta">
-                <img style="width: 50px;" src="img/1.png" alt="">
-                <p>Starter</p>
-                <p>$49</p>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corporis, facilis?</p>
+                <div class="tarjeta">
+                <img class="imagen" src="img/1.png" alt="">
+                <p class="amarillo">Team</p>
+                <p class="dinero">$229</p>
+                <p class="texto">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corporis, facilis?</p>
                 <p><a href="">Get started</a></p>
             </div>
         </div>
