@@ -60,12 +60,12 @@
             flex-direction: row;
             justify-content: space-between;
             align-items: center;
-            width: 90%;
+            width: 100%;
             min-height: 5rem;
             margin: 0 auto;
-
-
+            background-color: rgb(39, 38, 38);
         }
+
 
         p {
             font-size: 2rem;
@@ -153,12 +153,21 @@
             justify-content: space-around;
 
         }
+        .fijo{
+            position:fixed;
+            top:0;
+            left: 0;
+        }
+        .relativo{
+            position:relative;
+            z-index: 1;
+        }
     </style>
 </head>
 
 <body>
-    <header>
-        <nav>
+    <header class="relativo">
+        <nav class="fijo">
             <div>frozen solid designs</div>
             <div><i class="fa-brands fa-youtube"></i></div>
             <div><i class="fa-solid fa-envelope"></i> &nbsp;jason@frozensoliddesigns.com </div>
