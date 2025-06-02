@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Posicionamiento 2</title>
+    <style>
+        .contenedor{
+            width:300px;
+            height:300px;
+            border: 2px dashed black;
+            position:relative;
+        }
+        .contenedor div{
+            width:120px;
+            height: 50px;
+            font-weight: bold;
+            line-height: 1.5lh;
+            text-align: center;
+            border:1px solid rgb(0, 13, 255);
+        }
+        .box_1{
+            position: absolute;
+            top:0;
+            left:0;
+            background-color: aquamarine;
+        }
+        .box_2{
+            position: absolute;
+            top:0;
+            right: 0;
+            background-color: beige;
+        }
+        .box_3{
+            position: absolute;
+            left:0;
+            bottom: 0;
+            background-color: blue;
+        }
+        .box_4{
+            position: absolute;
+            right: 0;
+            bottom: 0;
+            background-color: rgb(166, 80, 232);
+        }
+        .box_5{
+            position: absolute;
+            right:0;
+            left:0;
+            top:0;
+            bottom:0;
+            margin:auto;
+            background-color: rgb(232, 156, 42);
+
+        }
+        .fijo{
+            width: 500px;
+            height:auto;
+            border: 2px solid black;
+            background-color: aliceblue;
+            margin-top:100px;
+            position:relative;
+        }
+        .fijo div{
+            height: 300px;
+            width: 300px;
+            border: 1px solid blue;
+            background-color: rgb(163, 164, 239);
+            margin-bottom: 10px;
+        }
+        .pega{
+            position:sticky;
+            /* background-color: rgb(235, 98, 98) !important; */
+            background-image: url("img/1.png");
+            top:100px;
+            left:0;
+        }    
+        .pega2{
+            position:sticky;
+            /* background-color: rgb(235, 98, 98) !important; */
+            background-image: url("img/2.png");
+            top:100px;
+            left:0;
+        }         
+    </style>
+</head>
+<body>
+<div class="contenedor">
+    <div class="box_1">1</div>
+    <div class="box_2">2</div>
+    <div class="box_3">3</div>
+    <div class="box_4">4</div>
+    <div class="box_5">5</div>
+</div>
+
+<div class="fijo">
+    <div class="pega">1</div>
+    <div class="hijo">2</div>
+    <div class="hijo">3</div>
+    <div class="hijo">4</div>
+    <div class="hijo">5</div>
+    <div class="hijo">6</div>
+    <div class="pega2">7</div>
+    <div class="hijo">8</div>
+    <div class="hijo">9</div>
+    <div class="hijo">10</div>
+    <div class="hijo">11</div>
+    <div class="hijo">12</div>
+    <div class="hijo">13</div>
+    <div class="hijo">14</div>
+    <div class="hijo">15</div>
+    <div class="hijo">16</div>
+    <div class="hijo">17</div>
+    <div class="hijo">18</div>
+    <div class="hijo">19</div>
+    <div class="hijo">20</div>
+</div>
+</body>
+</html>
