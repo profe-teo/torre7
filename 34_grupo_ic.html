@@ -43,11 +43,16 @@
             margin: 0;
         }
 
+        h3 {
+            font-size: 2rem;
+            color: black;
+            font-weight: 700;
+            margin: 0;
+        }
+
         hr {
             background-color: black;
             height: 1px;
-
-
         }
 
         .contenedor {
@@ -72,6 +77,8 @@
             font-weight: 600;
         }
 
+        /* ------------------------------------- */
+
         .primera {
 
             background: linear-gradient(rgba(0, 0, 0, 0.309)), url("img/ic_primera.webp");
@@ -79,7 +86,7 @@
 
             /* background-size: contain; */
             background-position: left;
-            height: 75vh;
+            height: 80vh;
             display: flex;
             flex-direction: column;
             justify-content: space-evenly;
@@ -122,8 +129,6 @@
             /* background-color: aqua; */
             min-height: 75vh;
             display: flex;
-
-
         }
 
         .contenedor_seg {
@@ -156,9 +161,22 @@
         .sectores {
             width: 17rem;
             height: 17rem;
+            box-sizing: border-box;
+            padding-left: 2rem;
+
             background-image: url("img/Sector-Retail_ic.jpg");
             background-size: cover;
             border-radius: 20px;
+            display: flex;
+            flex-direction: column;
+            justify-content: end;
+            align-content: start;
+
+        }
+        .sectores a{
+            text-decoration: none;
+            font-weight: 600;
+            color:orangered;
         }
     </style>
 </head>
@@ -223,10 +241,22 @@
                 </p>
             </div>
             <div class="derecha">
-                <div class="sectores"></div>
-                <div class="sectores"></div>
-                <div class="sectores"></div>
-                <div class="sectores"></div>
+                <div class="sectores">
+                    <h3>Retail</h3>
+                    <p><a href="">Ver más</a></p>
+                </div>
+                <div class="sectores">
+                    <h3>Lujo</h3>
+                    <p><a href="">Ver más</a></p>
+                </div>
+                <div class="sectores">
+                    <h3>Sanitario</h3>
+                    <p><a href="">Ver más</a></p>
+                </div>
+                <div class="sectores">
+                    <h3>Oficinas</h3>
+                    <p><a href="">Ver más</a></p>
+                </div>
             </div>
         </div>
     </section>
