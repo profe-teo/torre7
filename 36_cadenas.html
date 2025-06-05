@@ -45,26 +45,73 @@
         var mensaje = `Hola soy ${nombre}, ${email},${email},${email},tengo ${edad} años y mi correo es ${email}`;
         console.log(mensaje);
 
+        // ----------------------------------------------
+        console.log("----------------------------------------------");
+        var primera = "Primdera parte de la cadena.";
+        var segunda = "Segunda parte de la cadena";
+
         // 1. Concatena dos cadenas de texto
 
+        var total = primera + " " + segunda;
+        console.log(total);
+
         // 2. Muestra la longitud de una cadena de texto
+        var largo_txt = primera.length;
+        console.log(largo_txt);
 
         // 3. Muestra el primer y último carácter de una cadena
+        console.log(primera.at(0));
+        console.log(primera.charAt(0));
+        console.log(primera[0]);
+
+        console.log(primera.at(-1));
+        
+        console.log(primera.at(primera.length - 1));
 
         // 4. Convierte a minúsculas y a mayúsculas una cadena
+        console.log(primera.toLowerCase());
+        console.log(primera.toUpperCase());
 
         // 5. Crea una cadena de texto de varias lineas
+        var varias =`
+            una linea
+            otra
+            otra
+            otra`;
+        varias ="una linea \notra \notra \notra";
+        console.log(varias);
 
         // 6. Interpola el valor de una variable en una cadena
+        console.log(`Mi correo es ${email}`);
 
         // 7. Reemplazar todas las ocurrencias de una cadena por otra
+        var modificada = primera.replaceAll('a','_A_');
+        console.log(modificada + "\n" + primera);
 
         // 8. Comprueba si una cadena contiene una palabra concreta
+        
+        console.log(primera.indexOf(" de "));
 
         // 9. Comprueba si dos cadenas son iguales
+        console.log(primera == segunda);
 
         // 10. Comprueba si dos cadenas tienen la misma longitud
+        console.log(primera.length == segunda.length);
 
+/*
+Programación estructurada
+-------------------------
+
+1. Secuencia
+
+2. Alternativa o bifurcación
+
+3. Ciclos o bucles
+
+
+
+
+*/
     </script>
 </head>
 <body>

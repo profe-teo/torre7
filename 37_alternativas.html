@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        var numero = 101;
+
+        if (numero % 2 == 1) {
+            console.log(`El número ${numero} es IMPAR`);
+        }
+        else {
+            if (numero == 0) {
+                console.log(`El número es cero`);
+            }
+            else {
+                console.log(`El número ${numero} es PAR`);
+            }
+        }
+
+        // ---------------------------------------
+
+        var nota = 16;
+        if (nota < 5) {
+            console.log("SUSPENSO");
+        }
+        else {
+            if (nota < 7) {
+                console.log("SUFICIENTE");
+            }
+            else {
+                if (nota < 9) {
+                    console.log("NOTABLE");
+                }
+                else {
+                    console.log("SOBRESALIENTE");
+                }
+            }
+        }
+        // -------------------------------
+
+        var dia = 1;
+        if (0 < dia && dia < 8) {
+
+            if (dia == 1) { console.log(`Lunes`) }
+            if (dia == 2) { console.log("Martes") }
+            if (dia == 3) { console.log("Miércoles") }
+        }
+        else {
+            console.log("Día incorrecto");
+        }
+
+    </script>
+</head>
+
+<body>
+<button onclick="console.log('SUSPENSO');alert('jhjhjhj')">Púlsame</button>
+    <img ondblclick="alert('doble click en el tigre');"  style="width: 50px;" src="img/1.png" alt="">
+</body>
+
+</html>
