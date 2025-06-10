@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        // 1. Hacer un bucle que imprima los números de 1 a 20
+
+        var numero = 10;
+        for (var i = 1; i<=numero;i++){
+            console.log(i);
+        }
+        
+        // 2. Sumar los núemros entre 1 y 100 e imprimir el resultado
+        var total  = 0;
+        for(var i = 0; i<=100;i++){
+            total += i;
+        }
+        console.log(`La suma es ${total}`)
+        document.write('<h1>Hola Mundo</h1>');
+        document.write(`La suma es ${total}`);
+
+
+        // 3. Hacer una lista html
+        var texto = '';
+        var contenido = [
+            'pera',
+            'manzana',
+            'plátano',
+            'uva',
+            'fresa',
+            'ciruela',
+            'sandía',
+            'melón',
+            'mango',
+            'cereza'
+        ];
+        document.write('<h2>Listado de frutas</h2><hr>');
+        document.write("<ul>");
+        for(var i = 0; i<contenido.length;i++){
+            document.write(`<li><a href="#">${contenido[i]}</a></li>`);
+        }
+        
+        document.write("</ul>");
+
+        // ------------------
+        texto = "<ul>";
+        for(var i = 0; i<10;i++){
+            texto += `<li><a href="#">${contenido[i]}</a></li>`;
+        }
+        texto += "</ul>";
+        document.write(texto);
+
+    </script>
+</head>
+<body>
+<ul>
+    <li><a href=""></a></li>
+    <li><a href=""></a></li>
+    <li><a href=""></a></li>
+    <li><a href=""></a></li>
+    <li><a href=""></a></li>
+</ul>
+    
+</body>
+</html>
