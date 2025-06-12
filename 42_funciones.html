@@ -42,7 +42,7 @@
         }
         var x = suma_array(numeros);
         console.log(x)
-        document.write(`<br>La suma es ${x}`);
+        document.write(`<br>La suma es_____ ${x}`);
         // ----------------------------
 
         function capitalize(texto) {
@@ -69,6 +69,57 @@
         var txt = superCapitalize('Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio ipsum nisi sint veritatis ducimus, labore dolorum numquam praesentium? Tenetur nostrum dolor voluptate rem! Sit minima perferendis enim quas aliquid nisi.');
         console.log(txt);
         document.write('<br>' + txt);
+
+    // ---------------------------------------
+        // Hacer una función que nos indique si un texto tiene vocales
+        function tieneVocales(texto){
+            var vocales = 'aeiouAEIOU';
+            var salida = false;
+
+            for(var letra of vocales){
+                if (texto.indexOf(letra) >= 0){
+                    salida = true;
+                }
+            }
+            return salida;
+        }
+
+        //console.log(tieneVocales('mnmncáxvmznxbcvmnx'));
+        // if(tieneVocales('ssdsdsddu')){
+        //     console.log('La cadena tiene vocales');
+
+        // }
+        // else{
+        //     console.log('La cadena NO tiene vocales');
+        // }
+        function cuentaVocales(texto){
+            var vocales = 'aeiouAEIOU';
+            var contador = 0;
+            for (var letra of texto){
+                if(vocales.indexOf(letra) >=0){
+                    contador++;
+                }
+            }
+            return contador;
+        }
+        console.log(cuentaVocales('Lorem Ipsum Dolor Sit Amet Consectetur Adipisicing Elit.'));
+// --------------------------------------------
+
+        function cuentaVocales2(texto){
+            var vocales = 'aeiouAEIOU';
+            var contador = 0;
+            var largo = texto.length;
+
+            for (var i = 0; i < largo; i++){
+                if(vocales.indexOf(texto[i]) >=0){
+                    contador++;
+                }
+            }
+            return contador;
+        }
+
+        console.log(cuentaVocales2('Lorem'));
+        
     </script>
 </head>
 
