@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.cdnfonts.com/css/seven-segment" rel="stylesheet">
+
+                
+    <script src="js/47_ejemplos_varios.js"></script>
+    <style>
+        @font-face {
+        font-family: "seven";
+        src: url("fuentes/fs-sevegment.otf.woff2/fs-sevegment.otf.woff2") format("woff2");
+        }
+        p{
+          font-family: 'seven', sans-serif;
+          
+          font-weight: 500; 
+          margin:0;   
+          color:greenyellow;                                  
+        }
+        #reloj{
+            font-size: 6rem;
+        }
+        #dia_mes{
+            font-size:3rem;
+            text-align: center;
+        }
+        .esfera{
+             width:fit-content;
+            /*height:200px; */
+            border:15px solid rgb(226, 226, 229);
+            overflow:auto;
+            padding:30px;
+            background-color: black;
+            border-radius: 10px;
+
+        }
+
+        .contenedor{
+            display:grid;
+            grid-template-columns: 2fr 1fr;
+            grid-template-rows: 1fr 1fr;
+            width: 800px;
+            height:400px;
+            border:1px solid red;
+            margin: 0 auto;
+        }
+        .contenedor div{
+            border: 2px solid blue;
+            
+
+        }
+        .hora{
+            grid-row: 1/span 2;
+        }
+        .fecha{
+            
+        }
+        .temp{
+            
+        }
+
+    </style>
+    <title>Document</title>
+</head>
+<body>
+    <div class="esfera">
+        <p id="reloj">00:00</p>
+        <p id="dia_mes"></p>
+    </div>
+    <button onclick="iniciar()">Iniciar</button>
+    <button onclick="parar()">Parar</button>
+
+    <div class="contenedor">
+        <div class="hora">hora</div>
+        
+        <div class="fecha">fecha</div>
+        <div class="temp">temp</div>
+    </div>
+</body>
+</html>
+
+
