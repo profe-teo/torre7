@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="js/49_imc.js"></script>
+    <link rel="stylesheet" href="css/49_imc.css">
+    <title>Document</title>
+</head>
+<body>
+    <!-- IMC = Peso / altura ^ 2 -->
+     <h1>Calculadora de Índice de Masa Corporal</h1>
+    <p>IMC = Peso / altura ^ 2</p>
+     <form action="" id="form_imc" onsubmit="event.preventDefault();">
+        <label for="altura">Altura</label>
+        <input type="number"  id="altura" placeholder="En Cm" min="0">
+
+        <label for="peso">Peso</label>
+        <input type="number" id="peso" min="0" placeholder="En Kg">
+        <button onclick="calcularImc()">Calcular IMC</button>
+
+     </form>
+  
+
+     <div>
+        <h4>Tu resultado</h4>
+        <h2 id="resultado">0.0</h2>
+
+     </div>
+     <div>
+        <h4>Rango de valores</h4>
+        <p><b>Peso bajo:</b> Menos de 18.6 </p>
+        <p><b>Normal:</b> Entre 18.6 y 24.9</p>
+        <p><b>Sobrepeso:</b> Más de 24.9</p>
+     </div>
+
+</body>
+</html>

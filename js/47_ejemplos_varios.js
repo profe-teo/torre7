@@ -6,6 +6,7 @@ function iniciar(){
 
 function muestraHora(){
     let reloj = document.getElementById("reloj");
+    let hora_grid = document.getElementById("hora_grid");
 
     let fecha = new Date();
     const hora = String(fecha.getHours()).padStart(2,'0');
@@ -15,6 +16,7 @@ function muestraHora(){
     segundos = segundos.toString().padStart(2,'0');
 
     reloj.textContent = `${hora}:${minutos}:${segundos}`;
+    hora_grid.textContent = `${hora}:${minutos}:${segundos}`;
 
     muestraMes();
 }
