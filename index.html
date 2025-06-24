@@ -1,16 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/principal.css">
     <title>Listado de páginas de ejemplo</title>
 </head>
+
 <body>
     <header>
-        <h1>
-            Listado de páginas del curso
-        </h1>
+        <h1>Listado de páginas del curso</h1>
+        <div class="theme-toggle">
+            <label for="theme-select">Tema:</label>
+            <select id="theme-select">
+                <option value="auto">Auto</option>
+                <option value="light">Claro</option>
+                <option value="dark">Oscuro</option>
+            </select>
+        </div>
     </header>
     <main>
         <h2>
@@ -18,39 +26,56 @@
         </h2>
 
         <ul>
-        <li><a class="enlace" href="24_gato.html">24_gato</a></li>
-        <li><a class="enlace" href="23_fastfood.html">23_fastfood</a></li>
-        <li><a class="enlace" href="23_fastfood_rocio.html">23 Fast Fodd 23_fastfood_rocio</a></li>
-        <li><a class="enlace" href="12_microbit.html">12_microbit.html</a></li>
-        <li><a class="enlace" href="25_notist.html">25_notist.html</a></li>
-        <li><a class="enlace" href="27_clova.html">27_clova.html</a></li>
-        <li><a class="enlace" href="28_media_query.html" >28_media_query.html</a></li>
-        <li><a class="enlace" href="29_flexbox_1.html" >29_flexbox_1.html</a></li>
-        <li><a class="enlace" href="30_lista_precios.html" >30_lista_precios.html</a></li>
-        <li><a class="enlace" href="31_frozen_solid.html">31_frozen_solid.html</a></li>
-        <li><a href="32_posicion.html" class="enlace">32_posicion.html</a></li>
-        <li><a href="33_posicion_2.html" class="enlace">33_posicion_2.html</a></li>
-        <li><a href="ejemplo_06_sticky_2.html" class="enlace">ejemplo_06_sticky_2.html</a></li>
-        <li><a href="34_grupo_ic.html" class="enlace">34_grupo_ic.html</a></li>
-        <li><a href="35_hola_mundo_js.html" class="enlace">35_hola_mundo_js.html</a></li>
-        <li><a href="36_cadenas.html" class="enlace">36_cadenas.html</a></li>
-        <li><a href="37_alternativas.html" class="enlace">37_alternativas.html</a></li>
-        <li><a href="39_arrays.html" class="enlace">39_arrays.html</a></li>
-        <li><a href="40_bucles.html" class="enlace">40_bucles.html</a></li>
-        <li><a href="41_ejercicios_bucles.html" class="enlace">41_ejercicios_bucles.html</a></li>
-        <li><a href="42_funciones.html" class="enlace">42_funciones.html</a></li>
-        <li><a href="43_js_separado.html" class="enlace">43_js_separado.html</a></li>
-        <li><a href="44_repaso.html" class="enlace">44_repaso.html</a></li>
-        <li><a href="45_dom_1.html" class="enlace">45_dom_1.html</a></li>
-        <li><a href="47_ejemplos_varios.html" class="enlace">47_ejemplos_varios.html</a></li>
-        <li><a href="49_indice_masa_corporal.html" class="enlace">49_indice_masa_corporal.html</a></li>
-        <li><a href="50_adivina.html" class="enlace">50_adivina.html</a></li>
-        
-    </ul>    
+            <li><a class="enlace" href="24_gato.html">24_gato</a></li>
+            <li><a class="enlace" href="23_fastfood.html">23_fastfood</a></li>
+            <li><a class="enlace" href="23_fastfood_rocio.html">23 Fast Fodd 23_fastfood_rocio</a></li>
+            <li><a class="enlace" href="12_microbit.html">12_microbit.html</a></li>
+            <li><a class="enlace" href="25_notist.html">25_notist.html</a></li>
+            <li><a class="enlace" href="27_clova.html">27_clova.html</a></li>
+            <li><a class="enlace" href="28_media_query.html">28_media_query.html</a></li>
+            <li><a class="enlace" href="29_flexbox_1.html">29_flexbox_1.html</a></li>
+            <li><a class="enlace" href="30_lista_precios.html">30_lista_precios.html</a></li>
+            <li><a class="enlace" href="31_frozen_solid.html">31_frozen_solid.html</a></li>
+            <li><a href="32_posicion.html" class="enlace">32_posicion.html</a></li>
+            <li><a href="33_posicion_2.html" class="enlace">33_posicion_2.html</a></li>
+            <li><a href="ejemplo_06_sticky_2.html" class="enlace">ejemplo_06_sticky_2.html</a></li>
+            <li><a href="34_grupo_ic.html" class="enlace">34_grupo_ic.html</a></li>
+            <li><a href="35_hola_mundo_js.html" class="enlace">35_hola_mundo_js.html</a></li>
+            <li><a href="36_cadenas.html" class="enlace">36_cadenas.html</a></li>
+            <li><a href="37_alternativas.html" class="enlace">37_alternativas.html</a></li>
+            <li><a href="39_arrays.html" class="enlace">39_arrays.html</a></li>
+            <li><a href="40_bucles.html" class="enlace">40_bucles.html</a></li>
+            <li><a href="41_ejercicios_bucles.html" class="enlace">41_ejercicios_bucles.html</a></li>
+            <li><a href="42_funciones.html" class="enlace">42_funciones.html</a></li>
+            <li><a href="43_js_separado.html" class="enlace">43_js_separado.html</a></li>
+            <li><a href="44_repaso.html" class="enlace">44_repaso.html</a></li>
+            <li><a href="45_dom_1.html" class="enlace">45_dom_1.html</a></li>
+            <li><a href="47_ejemplos_varios.html" class="enlace">47_ejemplos_varios.html</a></li>
+            <li><a href="49_indice_masa_corporal.html" class="enlace">49_indice_masa_corporal.html</a></li>
+            <li><a href="50_adivina.html" class="enlace">50_adivina.html</a></li>
+
+        </ul>
     </main>
     <footer>
         <p>&copy; 2025 Torre 7 </p>
     </footer>
+    <script>
+        const select = document.getElementById('theme-select');
+        const userPref = localStorage.getItem('theme') || 'auto';
 
+        function applyTheme(theme) {
+            document.documentElement.setAttribute('data-theme', theme);
+        }
+
+        applyTheme(userPref);
+        select.value = userPref;
+
+        select.addEventListener('change', () => {
+            const selected = select.value;
+            localStorage.setItem('theme', selected);
+            applyTheme(selected);
+        });
+    </script>
 </body>
+
 </html>
